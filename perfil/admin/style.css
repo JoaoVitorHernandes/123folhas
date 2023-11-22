@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'poppins';
+    src: url('../../fonts/poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppins_medio';
+    src: url('../../fonts/poppins/Poppins-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppins_semibold';
+    src: url('../../fonts/poppins/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppins_bold';
+    src: url('../../fonts/poppins/Poppins-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pt_serif';
+    src: url('../../fonts/ptserif/PTSerif-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #527265;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+body::-webkit-scrollbar {
+    background-color: #bbbbbb50;
+    width: 12px;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(169, 185, 178);
+    scrollbar-width: 10px;
+    border-radius: 6px;
+}
+
+#voltar_deslogar{
+    display: flex;
+    width: 90%;
+    margin: 20px;
+    justify-content: space-between;
+}
+
+#voltar_deslogar div{
+    background-color: #fff;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: box-shadow 0.15s, background-color 0.15s;
+}
+
+#voltar_deslogar div a{
+    color: #527265;
+    text-decoration: none;
+    font-family: 'poppins_medio';
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#voltar_deslogar div:hover {
+    opacity: 0.9;
+    user-select: none;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+#voltar_deslogar div:focus, #voltar_deslogar div:active{
+    outline: none;
+    opacity: 0.8;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+#section_links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: auto;
+    margin: 20px;
+}
+.class_div{
+    background-color: rgb(255, 255, 255, 0.75);
+    width: 480px;
+    height: 170px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(30, 30, 30, 0.25);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.class_div .titulo{
+    font-family: 'poppins_bold';
+    display: flex;
+    justify-content: center;
+    color: rgba(40, 50, 40, 1);
+    font-size: 20px;
+}
+
+.class_div span{
+    text-align: center;
+    font-family: 'poppins';
+    display: flex;
+    justify-content: center;
+    color: rgba(40, 50, 40, 1);
+}
+
+.botoes_acessar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #527265;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    margin: auto 0 0 0;
+    transition: box-shadow 0.15s, background-color 0.15s;
+    cursor: pointer;
+}
+.botoes_acessar a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'poppins_medio';
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+
+    
+}
+.botoes_acessar:hover {
+    user-select: none;
+    opacity: 0.9;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.botoes_acessar:focus, .botoes_acessar:active{
+    outline: none;
+    opacity: 0.8;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 540px) {
+    #section_links{
+        width: 100%;
+    }
+}

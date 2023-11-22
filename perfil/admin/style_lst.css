@@ -1,0 +1,225 @@
+@font-face {
+    font-family: 'poppins';
+    src: url('../../fonts/poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'poppins_medio';
+    src: url('../../fonts/poppins/Poppins-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'poppins_semibold';
+    src: url('../../fonts/poppins/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'poppins_bold';
+    src: url('../../fonts/poppins/Poppins-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'poppins';
+    background-color: #527265;
+}
+body::-webkit-scrollbar {
+    background-color: #bbbbbb50;
+    width: 12px;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(169, 185, 178);
+    scrollbar-width: 10px;
+    border-radius: 6px;
+}
+
+#div_centralizar_elementos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 2px;
+    font-family: 'poppins_medio';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+td {
+    padding: 5px;
+    border: 1px  solid #bbb;
+    border-right: none;
+    border-left: none;
+    background-color: white;
+}
+th{
+    text-align: start;
+    font-size: 18px;
+}
+table tr td:last-child{
+    border-radius: 0 10px 10px 0;
+    padding-right: 15px;
+}
+table tr td:nth-child(1){
+    border-radius: 10px 0 0 10px;
+    padding-left: 15px;
+}
+#ADD {
+    
+    width: 200px;
+    margin-bottom: 10px;
+    display: flex;
+    font-family: 'poppins_semibold';
+    border: none;
+    color: white;
+    background-color: #303535;
+    font-size: 18px;
+    padding: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.15s, box-shadow 0.15s;
+}
+#ADD:hover {
+    opacity: 0.9;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+#ADD:active {
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+    opacity: 0.8;
+}
+
+#Voltar{
+    width: 200px;
+    margin-bottom: 10px;
+    display: flex;
+    font-family: 'poppins_semibold';
+    border: none;
+    color: black;
+    background-color: white;
+    font-size: 18px;
+    padding: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.15s, box-shadow 0.15s;
+}
+#Voltar:hover {
+    opacity: 0.9;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+#Voltar:active {
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+    opacity: 0.8;
+}
+
+#formulario{
+    display: inline-block
+}
+
+#busca{
+    user-select: none;
+    border-radius: 30px;
+    border: 0px solid;
+    color: #283228;
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    width: 300px;
+    margin: 0 10px 20px 0;
+    padding: 0 20px;
+    font-family: 'poppins';
+    transition: box-shadow 0.15s, background-color 0.15s;   
+}
+
+p{
+    color: white;
+}
+
+#busca:hover {
+    user-select: none;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+#busca:active {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+#busca:focus{
+    outline: none;
+}
+
+#button_submit{
+    font-family: 'poppins_semibold';
+    border: none;
+    color: black;
+    background-color: white;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.15s, box-shadow 0.15s;
+}
+
+#Edit {
+    color: black;
+}
+#Excluir{
+    color: black;
+}
+table {
+    margin-top: 15px;
+    border: 2px solid #bbb;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    border-spacing: 0 10px;
+    padding: 15px 15px;
+}
+#Editar {
+    user-select: none;
+    width: 130px;
+    font-family: 'poppins_semibold';
+    background-color: #527265;
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.15s, box-shadow 0.15s;
+}
+#Editar:hover {
+    opacity: 0.9;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+#Editar:active {
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+    opacity: 0.8;
+}
+
+#Excluir {
+    user-select: none;
+    width: 130px;
+    font-family: 'poppins_semibold';
+    background-color: rgb(255, 73, 73);
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.15s, box-shadow 0.15s;
+}
+#Excluir:hover {
+    opacity: 0.9;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+#Excluir:active {
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+    opacity: 0.8;
+}
