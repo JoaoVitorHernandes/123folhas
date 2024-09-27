@@ -19,3 +19,7 @@ O **123Folhas** facilita a busca e o planejamento de viagens ecológicas, com um
 
 - Servidor PHP
 - Banco de dados MySQL
+
+## Login como Administrador
+Email: joaovitordesouza@hotmail.com
+Senha:Fortnite123
